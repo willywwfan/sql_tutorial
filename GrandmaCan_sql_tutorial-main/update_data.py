@@ -3,7 +3,7 @@ import mysql.connector
 connection = mysql.connector.connect(host='localhost',
                                     port='3306',
                                     user='root',
-                                    password='password',
+                                    password='z04j04jo',
                                     database='sql_tutorial')
 
 cursor = connection.cursor()
@@ -17,9 +17,9 @@ cursor = connection.cursor()
 
 
 # 刪除
-# cursor.execute("DELETE FROM `branch` WHERE `branch_id` = 5;")
+cursor.execute("DELETE FROM `branch` WHERE `branch_id` = 5;")
 
 
 cursor.close()
-connection.commit()
+connection.commit()#動到資料
 connection.close()
